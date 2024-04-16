@@ -21,7 +21,7 @@ func HomePage(w http.ResponseWriter, r *http.Request) {
 
 func Contact(w http.ResponseWriter, r *http.Request) {
 	// 解析指定文件生成模板对象
-	tmpl, err := template.ParseFiles("./static/html/contact.html")
+	tmpl, err := template.ParseFiles("./static/html/Contact.html")
 	if err != nil {
 		fmt.Println("create template failed, err:", err)
 		return
@@ -99,7 +99,7 @@ func main() {
 	fs := http.FileServer(http.Dir("static"))
 	http.Handle("/static/", http.StripPrefix("/static/", fs))
 	http.HandleFunc("/", HomePage)
-	http.HandleFunc("/contact", Contact)
+	http.HandleFunc("/Contact", Contact)
 	http.HandleFunc("/Diary", Diary)
 	http.HandleFunc("/Quant", Quant)
 	http.HandleFunc("/Services", Services)
@@ -107,7 +107,7 @@ func main() {
 
 	http.HandleFunc("/test", test_html)
 
-	err := http.ListenAndServe(":9090", nil)
+	err := http.ListenAndServe(":8080", nil)
 	if err != nil {
 		fmt.Println("HTTP SERVER failed,err:", err)
 		return
