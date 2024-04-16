@@ -1,0 +1,129 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #000000;
+    padding-left: 10px; /* 左侧留白 */
+    padding-right: 10px; /* 右侧留白 */
+}
+
+header {
+    background-image: url('/static/img/header3.png');
+    background-size: cover;
+    background-position: center top;
+    color: #fff;
+    padding: 30px;
+    text-align: center;
+    margin-top: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+.index_href{
+    color: #fff;
+}
+
+
+nav {
+    background-color: #060000;
+    padding: 10px;
+    text-align: center;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    padding: 5px;
+}
+
+nav a:hover {
+    background-color: #040101;
+}
+.ml_index_blank,
+.quant_index_blank,
+.article_blank{
+    background-color: #000000;
+    width: 12.5%;
+    height: 1200px;
+}
+
+.quant_index_blank,
+.ml_index_blank,
+.index,
+.article,
+.article_blank{
+    float: left;
+}
+
+
+
+.ml_index_blank {
+    background-image: url('/static/img/blank_3.png');
+}
+
+.quant_index_blank {
+    background-image: url('/static/img/blank_2.png');
+}
+
+.article_blank{
+    background-image: url('/static/img/article_blank.png');
+}
+
+
+.index {
+    background-color: #000000;
+    background-size: cover;
+    background-position: center top; 
+    color: #ffffff;
+    text-align: center;
+    margin-top: 0;
+    font-family: "微软雅黑";
+    font-size: 16px; 
+    width: 75%;
+    height: 1200px;
+
+}
+.article{
+    background-color: #ffffff;
+    background-size: cover;
+    background-position: center top; 
+    color: #000000;
+    text-align: center;
+    margin-top: 0;
+    font-family: "微软雅黑";
+    font-size: 16px; 
+    width: 75%;
+    height: 1200px;
+}
+
+.diary{
+    background-color: #000000;
+    background-size: cover;
+    background-position: center top; 
+    color: #ffffff;
+    text-align: center;
+    margin-top: 0;
+    font-family: "微软雅黑";
+    font-size: 16px; 
+    width: 75%;
+    height: 1200px;
+}
+
+.diary,
+.article,
+.article_blank{
+    background-color: #000000;
+    color: #ffffff;
+    height: 1200px;
+}
+
+
+footer {
+    background-color: #090000;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}

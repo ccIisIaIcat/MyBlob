@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+
+<head>
+    <link rel="stylesheet" type="text/css" href="/static/css/index.css">
+    <meta charset="UTF-8">
+    <meta name="viewport">
+    <title>Blog&More</title>
+</head>
+
+<body>
+
+    <header>
+        <h1>Quant</h1>
+    </header>
+
+    <nav>
+        <a href="/">Home</a>
+        <a href="/Services">Services</a>
+        <a href="/ML">Diary</a>
+        <a href="/Quant">Quant</a>
+        <a href="/Monitor">Monitor</a>
+        <a href="/contact">Contact</a>
+    </nav>
+
+    <div class="quant_index_blank">
+    </div>
+
+    <div class="index" id="index">
+        <h2>目录</h2>
+        {{range .}}
+            <a href="{{.href}}" class="index_href">{{.name}}</a><br>
+        {{end}}
+    </div>
+
+
+    <div class="quant_index_blank">
+    </div>
+
+
+    <footer>
+        <p>&copy; 2024 Personal Blog. All rights reserved.</p>
+    </footer>
+
+</body>
+
+</html>
