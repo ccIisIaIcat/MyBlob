@@ -107,7 +107,7 @@ func main() {
 
 	http.HandleFunc("/test", test_html)
 
-	err := http.ListenAndServe(":8080", nil)
+	err := http.ListenAndServe(":80", nil)
 	if err != nil {
 		fmt.Println("HTTP SERVER failed,err:", err)
 		return
